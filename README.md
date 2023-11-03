@@ -57,8 +57,10 @@ uUNX8P03U3J91XsjCqOJ0LVqt4I4B2ZqEBfX1gCGBH4hH, 3D E9 B7 31 42 D7 54 D8 96 12 C9 
 ```
 
 ## Screenshots
-
-![image info](./Screenshots/Screenshot 2023-11-03 013515.png)
+1. Screenshot 1
+![image info](./Screenshots/Screenshot%202023-11-03%20013515.png)
+2. Screenshot 2
+![image info](./Screenshots/Screenshot%202023-11-03%20124437.png)
 
 ## Credits
 
