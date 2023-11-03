@@ -2,7 +2,7 @@
 # Date                  : November 3, 2023
 # Class                 : CSE 539 Applied Cryptography Fall (2023)
 # Professor             : Ni Trieu
-# Description           : 
+# Description           : This program represents a simple DHCE cryptosystem. It takes the values of IV, g, N, x, gy_modN, given_cipherText, given_plainText as command line arguments and prints the decipheredText and cipheredText as output.
 
 # Usage                 : Copy Paste 'Example Usage's Input' on terminal to get the 'Example Usage's Output'
 # General Usage's Input : python dhce_main.py initialization vector, g_e, g_c, N_e, N_c, x, g^y mod N, encrypted message C, plaintext P
