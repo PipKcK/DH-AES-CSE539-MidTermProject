@@ -69,5 +69,3 @@ if __name__ == "__main__":
 
     # formatted and printed the output (decipheredText, cipheredText)
     print('{}, {}'.format(decipheredText, " ".join([cipheredText.upper()[i:i+2] for i in range(0, len(cipheredText), 2)])))
-
-
