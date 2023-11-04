@@ -42,6 +42,7 @@ To resolve this use the following commands.
 ## Usage
 
 To use this script, you need to provide several parameters as command line arguments.
+*Copy paste 'Example Input' from below into the terminal to test the program.*
 
 #### General Input:
 
