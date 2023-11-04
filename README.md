@@ -12,6 +12,17 @@ This repository contains the implementation of a Diffie-Hellman Cryptosystem Enc
 
 The program implements a Diffie-Hellman key exchange protocol to generate a shared secret key between two parties. It then uses this key to encrypt and decrypt messages using the AES-CBC mode.
 
+We initially generate a key (this key is shared between two users) using the Diffie-Hellman key exchange protocol. We have `B = gy`, `x` and `N`. With this we are able to calculate the shared key = `B^x mod N` =  `gy^x mod N`. (Note: `gy = g^y mod N`)
+This creates a **256-bit shared key**.
+
+We then use this shared key along with a **128-bit Initialization Vector (IV)** to encrypt and decrypt messages using the AES-CBC mode. 
+
+During the encryption process, while using the AES_CBC mode, we pad the plaintext to make it a multiple of the **AES.block_size**. We store the encrypted value in the cipheredText variable and return it.
+
+During the decryption process, we unpad the plaintext to remove the padding added during the encryption process. We store the decrypted value in the decipheredText variable and return it.
+
+> Note: The program uses AES_CBC mode with padding to encrypt and decrypt messages.
+
 ## Requirements
 
 This project requires `Python 3.11` version or higher.
@@ -34,15 +45,15 @@ To use this script, you need to provide several parameters as command line argum
 
 #### General Input:
 
-```bash
+`
 python dhce_main.py initialization vector, g_e, g_c, N_e, N_c, x, g^y mod N, encrypted message C, plaintext P
-```
+`
 
 #### General Output:
 
-```
+`
 decrypted text, encrypted text
-```
+`
 
 #### Example Input:
 

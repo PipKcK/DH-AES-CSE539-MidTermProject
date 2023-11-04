@@ -46,14 +46,14 @@ def calculateSharedKey(gy, x, N):
 def encrypt(plainText, sharedKey, IV):
     # creates a new AES object with the given key, mode and IV
     cipher = AES.new(sharedKey, AES.MODE_CBC, IV)
-    cipheredText = cipher.encrypt(pad(plainText, AES.block_size)).hex()
+    cipheredText = cipher.encrypt(pad(plainText, AES.block_size)).hex() # padding the plain text and converting it to hexadecimal string
     return cipheredText
 
 # decrypt function decrypts the cipher text using AES-CBC mode and returns the plain text
 def decrypt(cipherText, sharedKey, IV):
     # creates a new AES object with the given key, mode and IV
     decipher = AES.new(sharedKey, AES.MODE_CBC, IV)
-    decipheredText = unpad(decipher.decrypt(cipherText), AES.block_size).decode()
+    decipheredText = unpad(decipher.decrypt(cipherText), AES.block_size).decode() # unpadding the plain text and converting it to string
     return decipheredText
 
 # main
